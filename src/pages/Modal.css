@@ -1,0 +1,101 @@
+nes (39 sloc) 681 Bytes body.active-modal {
+  overflow-y: hidden;
+}
+
+:root {
+  --clr-light: #242732;
+  --clr-medium: #1f2229;
+  --clr-dark: #1a1c22;
+
+  --clr-accent-primary: #59c3c3;
+  --clr-accent-secondary: #fdfffc;
+
+  --clr-text-primary: white;
+  --clr-text-secondary: black;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal {
+  z-index: 999;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 3rem;
+  border-radius: 15px;
+  max-width: 600px;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--clr-light);
+  color: var(--clr-text-primary);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 2rem;
+  border: none;
+  /* line-height: 25px; */
+}
+
+.close-modal:hover {
+  background-color: var(--clr-medium);
+  color: var(--clr-text-primary);
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  height: 1.25rem;
+}
+
+.form-control div label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  background-color: var(--clr-dark);
+  color: var(--clr-text-primary);
+}
+
+.form-control .react-datepicker-popper {
+  display: block;
+  margin-bottom: 0;
+}
+
+.submit-btn {
+  width: 100%;
+}
